@@ -3,6 +3,7 @@ import spellchecker
 sc = spellchecker.SpellChecker()
 
 while(True):
+
     sc.printMenu()
 
     txtIn = input()
