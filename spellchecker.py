@@ -18,11 +18,18 @@ class SpellChecker:
 
         stringaParoleTesto = testo.split()
         #print(stringaParoleTesto)
-        paroleErrate=self.multiDiz.searchWord(stringaParoleTesto,language)
+        #print("normale: \n")
+        #paroleErrate=self.multiDiz.searchWord(stringaParoleTesto,language)
+        print("Lineare: \n")
+        self.multiDiz.searchWordLinear(stringaParoleTesto,language)
+        print("Modulare: \n")
+        self.multiDiz.searchWordModular(stringaParoleTesto,language)
+
 
         endTime = time.time()
 
-        print(f" lista parole errate:{paroleErrate} , numero di parole errate:{len(paroleErrate)} ,tempo impiegato:{endTime-startTime}")
+        #print(f" lista parole errate:{paroleErrate} , numero di parole errate:{len(paroleErrate)} ,tempo impiegato:{endTime-startTime}")
+
 
 
     def printMenu(self):
